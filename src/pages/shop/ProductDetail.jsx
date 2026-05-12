@@ -1,5 +1,5 @@
 import { NavLink, useNavigate } from "react-router-dom";
-import { useProductDetail } from "../../hooks/useProductDetail";
+import UseProductDetail from "../../hooks/UseProductDetail";
 import { IoIosArrowRoundBack } from "react-icons/io";
 import { LuShoppingCart } from "react-icons/lu";
 import { LuPlus } from "react-icons/lu";
@@ -16,7 +16,7 @@ const ProductDetail = () => {
 
   const { addToCart } = useCartContext();
   const { token } = useGlobalContext();
-  const { product, loading, error } = useProductDetail();
+  const { product, loading, error } = UseProductDetail();
 
   const navigate = useNavigate();
 
