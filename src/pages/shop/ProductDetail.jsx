@@ -1,5 +1,5 @@
 import { NavLink, useNavigate } from "react-router-dom";
-import { useProductDetail } from "../../hooks/useProductDetail ";
+import { useProductDetail } from "../../hooks/useProductDetail";
 import { IoIosArrowRoundBack } from "react-icons/io";
 import { LuShoppingCart } from "react-icons/lu";
 import { LuPlus } from "react-icons/lu";
