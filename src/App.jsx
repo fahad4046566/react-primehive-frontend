@@ -3,6 +3,7 @@ import Navbar from './components/Navbar'
 import { Outlet,useLocation } from 'react-router-dom'
 import { useCartContext } from './context/CartContext';
 import { useEffect } from 'react';
+import Footer from './components/Footer';
 
 
 const App = () => {
@@ -20,6 +21,7 @@ const App = () => {
       <main>
         <Outlet/>
       </main>
+      {!hideComponent && <Footer />}
     </div>
   )
 }

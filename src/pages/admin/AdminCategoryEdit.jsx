@@ -1,12 +1,13 @@
 import { useEffect } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import { useForm } from "react-hook-form";
-import { adminUpdateCategoryApi } from "../../api/admin";
+import { adminUpdateCategoryApi} from "../../api/admin";
 import { UseCategoryDetail } from "../../hooks/UseCategoryDetail";
 import Loading from "../../components/Loading";
 
 const AdminCategoryEdit = () => {
   const { category, error, loading } = UseCategoryDetail();
+ 
   console.log(category);
   const { id } = useParams();
   const {
@@ -36,6 +37,8 @@ const AdminCategoryEdit = () => {
       </div>
     );
   if (error) return <p>Error: {error}</p>;
+
+ 
   return (
     <>
       <div className="">
